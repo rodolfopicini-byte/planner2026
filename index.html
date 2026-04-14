@@ -16,35 +16,35 @@
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text',sans-serif}
 .app{display:flex;flex-direction:column;height:100%}
-.topbar{padding:calc(var(--safe-top) + 10px) 16px 10px;background:var(--card);border-bottom:0.5px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0;z-index:50}
+.topbar{padding:calc(var(--safe-top) + 10px) 16px 10px;background:var(--card);border-bottom:0.5px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
 .logo{font-size:16px;font-weight:700;color:var(--txt)}
 .wnav{display:flex;align-items:center;gap:6px}
-.wnav button{width:28px;height:28px;border:0.5px solid var(--border2);border-radius:8px;background:var(--bg2);color:var(--txt);font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.wnav button{width:28px;height:28px;border:0.5px solid var(--border2);border-radius:8px;background:var(--bg2);color:var(--txt);font-size:14px;cursor:pointer}
 .wlbl{font-size:12px;color:var(--txt2);background:var(--bg2);padding:5px 10px;border-radius:8px;border:0.5px solid var(--border);white-space:nowrap}
-.tabs{display:flex;gap:0;background:var(--card);border-bottom:0.5px solid var(--border);overflow-x:auto;-webkit-overflow-scrolling:touch;flex-shrink:0}
+.tabs{display:flex;background:var(--card);border-bottom:0.5px solid var(--border);overflow-x:auto;-webkit-overflow-scrolling:touch;flex-shrink:0}
 .tabs::-webkit-scrollbar{display:none}
-.tab{flex-shrink:0;padding:10px 14px;border:none;background:transparent;cursor:pointer;font-size:12px;font-weight:500;color:var(--txt2);border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;font-family:inherit}
+.tab{flex-shrink:0;padding:10px 13px;border:none;background:transparent;cursor:pointer;font-size:12px;font-weight:500;color:var(--txt2);border-bottom:2px solid transparent;white-space:nowrap;font-family:inherit}
 .tab.active{color:var(--purple);border-bottom-color:var(--purple)}
-.scroll-area{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:16px 16px calc(var(--safe-bot) + 16px)}
-.section{margin-bottom:1.1rem}
+.scroll-area{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:14px 16px calc(var(--safe-bot) + 20px)}
+.section{margin-bottom:1rem}
 .stitle{font-size:11px;font-weight:600;color:var(--txt2);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.5rem}
-.card{background:var(--card);border:0.5px solid var(--border);border-radius:var(--rl);padding:.85rem 1rem;margin-bottom:.6rem}
-.frow{display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:0.5px solid var(--border);gap:8px}
+.card{background:var(--card);border:0.5px solid var(--border);border-radius:var(--rl);padding:.8rem 1rem;margin-bottom:.55rem}
+.frow{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:0.5px solid var(--border);gap:8px}
 .frow:last-child{border-bottom:none}
 .flabel{font-size:13px;color:var(--txt2);flex-shrink:0}
 .fval{font-size:13px;color:var(--txt);font-weight:600}
-input[type=text],input[type=number],textarea,select{font-size:13px;padding:6px 9px;border:0.5px solid var(--border);border-radius:8px;background:var(--bg2);color:var(--txt);outline:none;font-family:inherit;-webkit-appearance:none}
+input[type=text],input[type=number],textarea,select{font-size:13px;padding:6px 8px;border:0.5px solid var(--border);border-radius:8px;background:var(--bg2);color:var(--txt);outline:none;font-family:inherit;-webkit-appearance:none}
 input:focus,textarea:focus,select:focus{border-color:var(--purple)}
-textarea{resize:vertical;min-height:60px;width:100%}
-.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;margin-bottom:.75rem}
-.metric{background:var(--bg2);border-radius:var(--r);padding:.65rem .85rem}
-.metric-lbl{font-size:11px;color:var(--txt2);margin-bottom:3px}
-.metric-val{font-size:20px;font-weight:700;color:var(--txt);line-height:1.2}
+textarea{resize:vertical;min-height:56px;width:100%}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(105px,1fr));gap:7px;margin-bottom:.7rem}
+.metric{background:var(--bg2);border-radius:var(--r);padding:.6rem .8rem}
+.metric-lbl{font-size:11px;color:var(--txt2);margin-bottom:2px}
+.metric-val{font-size:19px;font-weight:700;color:var(--txt);line-height:1.2}
 .metric-sub{font-size:11px;color:var(--txt3);margin-top:2px}
-.pbar{height:5px;background:var(--bg3);border-radius:3px;overflow:hidden;margin-top:5px}
+.pbar{height:5px;background:var(--bg3);border-radius:3px;overflow:hidden;margin-top:4px}
 .pfill{height:100%;border-radius:3px;transition:width .3s}
 .checks{display:flex;flex-wrap:wrap;gap:6px}
-.ci{display:flex;align-items:center;gap:6px;padding:7px 10px;border:0.5px solid var(--border);border-radius:8px;cursor:pointer;font-size:13px;color:var(--txt);background:var(--bg2);transition:all .15s;user-select:none}
+.ci{display:flex;align-items:center;gap:6px;padding:7px 10px;border:0.5px solid var(--border);border-radius:8px;cursor:pointer;font-size:13px;color:var(--txt);background:var(--bg2);user-select:none;transition:all .15s}
 .ci.done{border-color:var(--green);background:var(--gbg);color:var(--gtxt)}
 .bx{width:15px;height:15px;border:1.5px solid var(--border2);border-radius:3px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700}
 .ci.done .bx{background:var(--green);border-color:var(--green);color:#fff}
@@ -55,38 +55,55 @@ textarea{resize:vertical;min-height:60px;width:100%}
 .ag{background:var(--gbg);color:var(--gtxt)}
 .aa{background:var(--abg);color:var(--atxt)}
 .ar{background:var(--rbg);color:var(--rtxt)}
-.btn{padding:7px 14px;border:0.5px solid var(--border2);border-radius:8px;background:var(--bg2);cursor:pointer;font-size:13px;color:var(--txt);font-family:inherit;transition:all .15s}
+.btn{padding:7px 13px;border:0.5px solid var(--border2);border-radius:8px;background:var(--bg2);cursor:pointer;font-size:13px;color:var(--txt);font-family:inherit}
 .btn:active{opacity:.7}
 .btnp{background:var(--purple);border-color:var(--purple);color:#fff;font-weight:600}
 .dec-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.div{height:0.5px;background:var(--border);margin:.85rem 0}
-.mrow{display:grid;grid-template-columns:88px 1fr 58px;gap:6px;align-items:center;margin-bottom:6px}
-.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:6px;margin-bottom:8px;font-weight:600}
+.div{height:0.5px;background:var(--border);margin:.8rem 0}
+.mrow{display:grid;grid-template-columns:88px 1fr 52px;gap:6px;align-items:center;margin-bottom:6px}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:6px;margin-bottom:7px;font-weight:600}
 .badge-p{background:var(--pbg);color:var(--ptxt)}
 .badge-t{background:var(--bbg);color:var(--btxt)}
 .prog-ring{display:flex;align-items:center;gap:10px;margin-top:8px}
-.ring-wrap{position:relative;width:52px;height:52px;flex-shrink:0}
-.ring-wrap svg{width:52px;height:52px;transform:rotate(-90deg)}
+.ring-wrap{position:relative;width:50px;height:50px;flex-shrink:0}
+.ring-wrap svg{width:50px;height:50px;transform:rotate(-90deg)}
 .ring-txt{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--txt)}
 .hidden{display:none!important}
 .chart-wrap{position:relative;width:100%}
 .hm-cell{width:20px;height:20px;border-radius:4px;display:inline-block}
+.day-tabs{display:flex;gap:4px;margin-bottom:12px;flex-wrap:wrap}
+.day-btn{padding:7px 12px;border:0.5px solid var(--border2);border-radius:8px;background:var(--bg2);cursor:pointer;font-size:13px;font-weight:600;color:var(--txt2);font-family:inherit;transition:all .15s}
+.day-btn.active{background:var(--purple);border-color:var(--purple);color:#fff}
+.day-btn.has-data{border-color:var(--green);color:var(--gtxt)}
+.day-btn.active.has-data{background:var(--green);border-color:var(--green);color:#fff}
+.acct-block{border-radius:var(--rl);border:0.5px solid var(--border);overflow:hidden;margin-bottom:10px}
+.acct-hdr{padding:9px 12px;font-size:12px;font-weight:700;letter-spacing:.03em}
+.acct-hdr.prop{background:var(--gbg);color:var(--gtxt)}
+.acct-hdr.real{background:var(--bbg);color:var(--btxt)}
+.acct-body{padding:0 12px;background:var(--card)}
+.week-sum{background:var(--bg2);border-radius:var(--rl);padding:10px 12px;margin-bottom:12px}
+.week-sum-title{font-size:11px;font-weight:600;color:var(--txt2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.score-table{width:100%;border-collapse:collapse;font-size:12px}
+.score-table th{text-align:left;padding:6px 4px;color:var(--txt2);font-weight:600;border-bottom:0.5px solid var(--border);font-size:11px}
+.score-table td{padding:5px 4px;border-bottom:0.5px solid var(--border);vertical-align:middle}
+.score-table tr:last-child td{border-bottom:none}
+.score-mini{display:flex;gap:2px;flex-wrap:wrap}
+.smini{width:26px;height:26px;border:0.5px solid var(--border);border-radius:5px;background:var(--bg2);cursor:pointer;font-size:11px;font-weight:600;color:var(--txt2);font-family:inherit}
+.smini.sel{background:var(--purple);border-color:var(--purple);color:#fff}
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--txt);color:var(--bg);padding:8px 18px;border-radius:20px;font-size:13px;font-weight:600;opacity:0;transition:opacity .3s;z-index:999;white-space:nowrap;pointer-events:none}
 .toast.show{opacity:1}
 </style>
 </head>
 <body>
 <div class="app">
-
 <div class="topbar">
   <div class="logo">Planner 2026</div>
   <div class="wnav">
     <button onclick="chgWeek(-1)">&#8592;</button>
-    <div class="wlbl" id="wlbl">—</div>
+    <div class="wlbl" id="wlbl">-</div>
     <button onclick="chgWeek(1)">&#8594;</button>
   </div>
 </div>
-
 <div class="tabs">
   <button class="tab active" onclick="sw('empresa',this)">Empresa</button>
   <button class="tab" onclick="sw('trade',this)">Trade</button>
@@ -96,15 +113,11 @@ textarea{resize:vertical;min-height:60px;width:100%}
   <button class="tab" onclick="sw('stats',this)">Stats</button>
   <button class="tab" onclick="sw('anual',this)">Anual</button>
 </div>
-
 <div class="scroll-area" id="scroll-area">
 
 <!-- EMPRESA -->
 <div id="tab-empresa">
-  <div class="section">
-    <div class="stitle">Foco da semana</div>
-    <div class="card"><textarea id="foco" placeholder="Objetivo principal desta semana..." rows="2" oninput="sv()"></textarea></div>
-  </div>
+  <div class="section"><div class="stitle">Foco da semana</div><div class="card"><textarea id="foco" placeholder="Objetivo principal desta semana..." rows="2" oninput="sv()"></textarea></div></div>
   <div class="section">
     <div class="stitle">Metas financeiras</div>
     <div class="card">
@@ -113,106 +126,58 @@ textarea{resize:vertical;min-height:60px;width:100%}
       <div class="frow"><span class="flabel">KPI critico</span><input type="text" id="kpi" style="width:170px;text-align:right" placeholder="ex: taxa comparecimento" oninput="sv()"></div>
     </div>
     <div class="mgrid">
-      <div class="metric"><div class="metric-lbl">Atingimento</div><div class="metric-val" id="m-at">—</div><div class="pbar"><div class="pfill" id="pb-fat" style="background:var(--green);width:0%"></div></div></div>
-      <div class="metric"><div class="metric-lbl">Saldo semana</div><div class="metric-val" id="m-sal" style="font-size:15px">—</div></div>
+      <div class="metric"><div class="metric-lbl">Atingimento</div><div class="metric-val" id="m-at">-</div><div class="pbar"><div class="pfill" id="pb-fat" style="background:var(--green);width:0%"></div></div></div>
+      <div class="metric"><div class="metric-lbl">Saldo semana</div><div class="metric-val" id="m-sal" style="font-size:15px">-</div></div>
     </div>
   </div>
   <div class="section">
     <div class="stitle">3 melhorias da semana</div>
-    <div class="card">
-      <div id="melh-list"></div>
-      <div style="margin-top:8px"><button class="btn" onclick="addM()">+ Melhoria</button></div>
-    </div>
+    <div class="card"><div id="melh-list"></div><div style="margin-top:8px"><button class="btn" onclick="addM()">+ Melhoria</button></div></div>
   </div>
   <div class="section">
-    <div class="stitle">Consultas — Olhar Solidario</div>
+    <div class="stitle">Consultas - Olhar Solidario</div>
     <div class="card">
       <div class="frow"><span class="flabel">Agendadas</span><input type="number" id="ag-t" style="width:70px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcAg()"></div>
       <div class="frow"><span class="flabel">Realizadas</span><input type="number" id="ag-r" style="width:70px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcAg()"></div>
-      <div class="frow"><span class="flabel">Convertidas em venda</span><input type="number" id="ag-c" style="width:70px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcAg()"></div>
-      <div class="frow"><span class="flabel">Taxa comparecimento</span><span class="fval" id="tx-comp">—</span></div>
-      <div class="frow"><span class="flabel">Conversao venda</span><span class="fval" id="tx-conv">—</span></div>
+      <div class="frow"><span class="flabel">Convertidas</span><input type="number" id="ag-c" style="width:70px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcAg()"></div>
+      <div class="frow"><span class="flabel">Taxa comparecimento</span><span class="fval" id="tx-comp">-</span></div>
+      <div class="frow"><span class="flabel">Conversao venda</span><span class="fval" id="tx-conv">-</span></div>
     </div>
   </div>
 </div>
 
 <!-- TRADE -->
 <div id="tab-trade" class="hidden">
-  <div class="mgrid">
-    <div class="metric"><div class="metric-lbl">Mesa prop</div><div class="metric-val">15c</div><div class="metric-sub">proprietaria</div></div>
-    <div class="metric"><div class="metric-lbl">Conta real</div><div class="metric-val">4c</div><div class="metric-sub">capital proprio</div></div>
-    <div class="metric"><div class="metric-lbl">Resultado total</div><div class="metric-val" id="m-trad" style="font-size:15px">R$0</div></div>
-    <div class="metric"><div class="metric-lbl">Win rate</div><div class="metric-val" id="m-wr">—</div></div>
-  </div>
-  <div class="section">
-    <div class="stitle">Pre-pregao</div>
-    <div class="card">
-      <div class="frow"><span class="flabel">Bias do dia</span><select id="bias" onchange="sv()" style="width:120px"><option value="">—</option><option>Alta</option><option>Baixa</option><option>Lateral</option></select></div>
-      <div class="frow"><span class="flabel">Setup</span><select id="setup" onchange="sv()" style="width:120px"><option value="">—</option><option>Bandeira</option><option>Halt</option><option>Pivot</option></select></div>
-      <div class="frow"><span class="flabel">Fibonacci ref.</span><input type="text" id="fib" style="width:110px;text-align:right" placeholder="ex: 127.800" oninput="sv()"></div>
-      <div class="frow"><span class="flabel">R/R minimo</span><input type="text" id="rr" style="width:70px;text-align:right" placeholder="1:3" oninput="sv()"></div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="stitle">Mesa proprietaria — 15 contratos</div>
-    <div class="card">
-      <div class="frow"><span class="flabel">Stop diario (R$)</span><input type="number" id="ps" style="width:100px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv()"></div>
-      <div class="frow"><span class="flabel">Profit alvo (R$)</span><input type="number" id="pp" style="width:100px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv()"></div>
-      <div class="frow"><span class="flabel">Resultado (R$)</span><input type="number" id="pr" style="width:100px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcTr()"></div>
-      <div class="frow"><span class="flabel">Ops / Win / Loss</span><div style="display:flex;gap:5px"><input type="number" id="po" style="width:48px;text-align:center" placeholder="ops" inputmode="numeric" oninput="sv();calcTr()"><input type="number" id="pw" style="width:48px;text-align:center" placeholder="win" inputmode="numeric" oninput="sv();calcTr()"><input type="number" id="pl" style="width:48px;text-align:center" placeholder="loss" inputmode="numeric" oninput="sv();calcTr()"></div></div>
-      <div class="frow"><span class="flabel">Stop respeitado?</span><select id="pso" onchange="sv()" style="width:100px"><option value="">—</option><option>Sim</option><option>Nao</option><option>Parcial</option></select></div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="stitle">Conta real — 4 contratos</div>
-    <div class="card">
-      <div class="frow"><span class="flabel">Stop diario (R$)</span><input type="number" id="rs" style="width:100px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv()"></div>
-      <div class="frow"><span class="flabel">Profit alvo (R$)</span><input type="number" id="rp" style="width:100px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv()"></div>
-      <div class="frow"><span class="flabel">Resultado (R$)</span><input type="number" id="rr2" style="width:100px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcTr()"></div>
-      <div class="frow"><span class="flabel">Ops / Win / Loss</span><div style="display:flex;gap:5px"><input type="number" id="ro" style="width:48px;text-align:center" placeholder="ops" inputmode="numeric" oninput="sv();calcTr()"><input type="number" id="rw" style="width:48px;text-align:center" placeholder="win" inputmode="numeric" oninput="sv();calcTr()"><input type="number" id="rl2" style="width:48px;text-align:center" placeholder="loss" inputmode="numeric" oninput="sv();calcTr()"></div></div>
-      <div class="frow"><span class="flabel">Stop respeitado?</span><select id="rso" onchange="sv()" style="width:100px"><option value="">—</option><option>Sim</option><option>Nao</option><option>Parcial</option></select></div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="stitle">Emocional do trade</div>
-    <div class="card">
-      <div style="margin-bottom:10px"><div class="flabel" style="margin-bottom:7px">Nota emocional (1–10)</div><div class="srow" id="sc-trade"></div></div>
-      <textarea id="diario" placeholder="Diario emocional — o que aconteceu, como reagiu, o que vai mudar..." oninput="sv()"></textarea>
-    </div>
-  </div>
+  <div class="week-sum"><div class="week-sum-title">Resumo da semana</div><div class="mgrid" id="trade-week-sum"></div></div>
+  <div class="day-tabs" id="trade-day-tabs"></div>
+  <div id="trade-day-content"></div>
 </div>
 
 <!-- SAUDE -->
 <div id="tab-saude" class="hidden">
-  <div class="section">
-    <div class="stitle">Meditacao diaria — 7x por semana</div>
-    <div class="card"><div class="checks" id="ck-med"></div></div>
+  <!-- Resumo saude semanal -->
+  <div class="week-sum">
+    <div class="week-sum-title">Media da semana</div>
+    <div class="mgrid" id="saude-week-sum"></div>
   </div>
-  <div class="section">
-    <div class="stitle">Yoga — 1x por semana</div>
-    <div class="card"><div class="checks" id="ck-yoga"></div></div>
+  <!-- Seletor de dia saude -->
+  <div class="day-tabs" id="saude-day-tabs"></div>
+  <!-- Conteudo dia saude -->
+  <div id="saude-day-content"></div>
+  <!-- Atividades fisicas semanais -->
+  <div class="section" style="margin-top:8px">
+    <div class="stitle">Atividades fisicas da semana</div>
+    <div class="section"><div class="stitle" style="font-size:10px">Yoga - 1x por semana</div><div class="card"><div class="checks" id="ck-yoga"></div></div></div>
+    <div class="section"><div class="stitle" style="font-size:10px">Academia - 3x por semana</div><div class="card"><div class="checks" id="ck-ac"></div></div></div>
+    <div class="section"><div class="stitle" style="font-size:10px">Pedal - 3x por semana</div><div class="card"><div class="checks" id="ck-ped"></div></div></div>
   </div>
+  <!-- Peso -->
   <div class="section">
-    <div class="stitle">Academia — 3x por semana</div>
-    <div class="card"><div class="checks" id="ck-ac"></div></div>
-  </div>
-  <div class="section">
-    <div class="stitle">Pedal — 3x por semana</div>
-    <div class="card"><div class="checks" id="ck-ped"></div></div>
-  </div>
-  <div class="section">
-    <div class="stitle">Indicadores</div>
+    <div class="stitle">Peso</div>
     <div class="card">
       <div class="frow"><span class="flabel">Peso atual (kg)</span><input type="number" id="peso" style="width:85px;text-align:right" step="0.1" placeholder="0.0" inputmode="decimal" oninput="sv();calcPeso()"></div>
       <div class="frow"><span class="flabel">Peso referencia (kg)</span><input type="number" id="peso0" style="width:85px;text-align:right" step="0.1" placeholder="0.0" inputmode="decimal" oninput="sv();calcPeso()"></div>
-      <div class="frow"><span class="flabel">Diferenca</span><span class="fval" id="peso-d">—</span></div>
-    </div>
-    <div class="card">
-      <div style="margin-bottom:10px"><div class="flabel" style="margin-bottom:7px">Sono (1–10)</div><div class="srow" id="sc-sono"></div></div>
-      <div class="div"></div>
-      <div style="margin:.75rem 0"><div class="flabel" style="margin-bottom:7px">Alimentacao (1–10)</div><div class="srow" id="sc-alim"></div></div>
-      <div class="div"></div>
-      <div style="margin-top:.75rem"><div class="flabel" style="margin-bottom:7px">Ansiedade (1=alta · 10=calmo)</div><div class="srow" id="sc-ans"></div></div>
+      <div class="frow"><span class="flabel">Diferenca</span><span class="fval" id="peso-d">-</span></div>
     </div>
   </div>
 </div>
@@ -223,42 +188,39 @@ textarea{resize:vertical;min-height:60px;width:100%}
     <div class="stitle">Livro pessoal</div>
     <div class="card">
       <span class="badge badge-p">Pessoal</span>
-      <div class="frow"><span class="flabel">Titulo</span><input type="text" id="bp-titulo" style="width:190px;text-align:right" placeholder="Nome do livro" oninput="sv()"></div>
-      <div class="frow"><span class="flabel">Autor</span><input type="text" id="bp-autor" style="width:170px;text-align:right" placeholder="Autor" oninput="sv()"></div>
+      <div class="frow"><span class="flabel">Titulo</span><input type="text" id="bp-titulo" style="width:185px;text-align:right" placeholder="Nome do livro" oninput="sv()"></div>
+      <div class="frow"><span class="flabel">Autor</span><input type="text" id="bp-autor" style="width:165px;text-align:right" placeholder="Autor" oninput="sv()"></div>
       <div class="frow"><span class="flabel">Total de paginas</span><input type="number" id="bp-total" style="width:85px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcLiv()"></div>
       <div class="frow"><span class="flabel">Pagina atual</span><input type="number" id="bp-atual" style="width:85px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcLiv()"></div>
       <div class="frow"><span class="flabel">Paginas esta semana</span><input type="number" id="bp-sem" style="width:85px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcLiv()"></div>
       <div class="prog-ring">
-        <div class="ring-wrap"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="22" fill="none" stroke="var(--border)" stroke-width="5"/><circle id="rp-p" cx="26" cy="26" r="22" fill="none" stroke="var(--purple)" stroke-width="5" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="138.2"/></svg><div class="ring-txt" id="rp-pt">0%</div></div>
-        <div><div style="font-size:13px;font-weight:600;color:var(--txt)" id="bp-pct-lbl">0 de 0 pgs</div><div style="font-size:12px;color:var(--txt2);margin-top:2px" id="bp-est">Estimativa: —</div></div>
+        <div class="ring-wrap"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="21" fill="none" stroke="var(--border)" stroke-width="5"/><circle id="rp-p" cx="25" cy="25" r="21" fill="none" stroke="var(--purple)" stroke-width="5" stroke-linecap="round" stroke-dasharray="131.9" stroke-dashoffset="131.9"/></svg><div class="ring-txt" id="rp-pt">0%</div></div>
+        <div><div style="font-size:13px;font-weight:600;color:var(--txt)" id="bp-pct-lbl">0 de 0 pgs</div><div style="font-size:12px;color:var(--txt2);margin-top:2px" id="bp-est">Estimativa: -</div></div>
       </div>
-      <div style="margin-top:10px"><div class="flabel" style="margin-bottom:6px">Aprendizados da semana</div><textarea id="bp-nota" placeholder="O que este livro esta trazendo para voce..." oninput="sv()"></textarea></div>
+      <div style="margin-top:10px"><div class="flabel" style="margin-bottom:6px">Aprendizados</div><textarea id="bp-nota" placeholder="O que este livro esta trazendo..." oninput="sv()"></textarea></div>
     </div>
   </div>
   <div class="section">
     <div class="stitle">Livro profissional</div>
     <div class="card">
       <span class="badge badge-t">Profissional</span>
-      <div class="frow"><span class="flabel">Titulo</span><input type="text" id="bt-titulo" style="width:190px;text-align:right" placeholder="Nome do livro" oninput="sv()"></div>
-      <div class="frow"><span class="flabel">Autor</span><input type="text" id="bt-autor" style="width:170px;text-align:right" placeholder="Autor" oninput="sv()"></div>
+      <div class="frow"><span class="flabel">Titulo</span><input type="text" id="bt-titulo" style="width:185px;text-align:right" placeholder="Nome do livro" oninput="sv()"></div>
+      <div class="frow"><span class="flabel">Autor</span><input type="text" id="bt-autor" style="width:165px;text-align:right" placeholder="Autor" oninput="sv()"></div>
       <div class="frow"><span class="flabel">Total de paginas</span><input type="number" id="bt-total" style="width:85px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcLiv()"></div>
       <div class="frow"><span class="flabel">Pagina atual</span><input type="number" id="bt-atual" style="width:85px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcLiv()"></div>
       <div class="frow"><span class="flabel">Paginas esta semana</span><input type="number" id="bt-sem" style="width:85px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcLiv()"></div>
       <div class="prog-ring">
-        <div class="ring-wrap"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="22" fill="none" stroke="var(--border)" stroke-width="5"/><circle id="rp-t" cx="26" cy="26" r="22" fill="none" stroke="var(--blue)" stroke-width="5" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="138.2"/></svg><div class="ring-txt" id="rp-tt">0%</div></div>
-        <div><div style="font-size:13px;font-weight:600;color:var(--txt)" id="bt-pct-lbl">0 de 0 pgs</div><div style="font-size:12px;color:var(--txt2);margin-top:2px" id="bt-est">Estimativa: —</div></div>
+        <div class="ring-wrap"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="21" fill="none" stroke="var(--border)" stroke-width="5"/><circle id="rp-t" cx="25" cy="25" r="21" fill="none" stroke="var(--blue)" stroke-width="5" stroke-linecap="round" stroke-dasharray="131.9" stroke-dashoffset="131.9"/></svg><div class="ring-txt" id="rp-tt">0%</div></div>
+        <div><div style="font-size:13px;font-weight:600;color:var(--txt)" id="bt-pct-lbl">0 de 0 pgs</div><div style="font-size:12px;color:var(--txt2);margin-top:2px" id="bt-est">Estimativa: -</div></div>
       </div>
-      <div style="margin-top:10px"><div class="flabel" style="margin-bottom:6px">Aprendizados da semana</div><textarea id="bt-nota" placeholder="Como aplicar no trade ou na empresa..." oninput="sv()"></textarea></div>
+      <div style="margin-top:10px"><div class="flabel" style="margin-bottom:6px">Aprendizados</div><textarea id="bt-nota" placeholder="Como aplicar no trade ou empresa..." oninput="sv()"></textarea></div>
     </div>
   </div>
   <div class="section">
     <div class="stitle">Livros concluidos</div>
     <div class="card">
       <div id="livros-hist" style="font-size:13px;color:var(--txt2);margin-bottom:10px">Nenhum livro concluido ainda.</div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <button class="btn" onclick="concluirLivro('p')">Concluir pessoal</button>
-        <button class="btn" onclick="concluirLivro('t')">Concluir profissional</button>
-      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" onclick="concluirLivro('p')">Concluir pessoal</button><button class="btn" onclick="concluirLivro('t')">Concluir profissional</button></div>
     </div>
   </div>
 </div>
@@ -268,19 +230,20 @@ textarea{resize:vertical;min-height:60px;width:100%}
   <div id="rev-alerts"></div>
   <div class="section"><div class="stitle">O que funcionou</div><div class="card"><textarea id="rev-pos" placeholder="Pontos positivos desta semana..." oninput="sv()"></textarea></div></div>
   <div class="section"><div class="stitle">O que ajustar</div><div class="card"><textarea id="rev-aj" placeholder="O que nao funcionou, o que mudar..." oninput="sv()"></textarea></div></div>
-  <div class="section"><div class="stitle">Estado emocional</div><div class="card"><textarea id="rev-em" placeholder="Como foi a semana? A meditacao ajudou? O yoga?" oninput="sv()"></textarea></div></div>
-  <div class="section"><div class="stitle">Decisao da semana</div><div class="card"><div class="dec-grid" id="dec-grid"></div></div></div>
+  <div class="section"><div class="stitle">Estado emocional</div><div class="card"><textarea id="rev-em" placeholder="Como foi a semana? A meditacao ajudou?" oninput="sv()"></textarea></div></div>
+  <div class="section"><div class="stitle">Decisao</div><div class="card"><div class="dec-grid" id="dec-grid"></div></div></div>
   <div class="section"><div class="stitle">Resumo</div><div class="mgrid" id="res-metrics"></div></div>
 </div>
 
 <!-- STATS -->
 <div id="tab-stats" class="hidden">
   <div class="mgrid" id="st-metrics"></div>
-  <div class="section"><div class="stitle">Trade — resultado por semana (R$)</div><div class="card"><div class="chart-wrap" style="height:180px"><canvas id="ch-trade" role="img" aria-label="Resultado trade por semana">Resultado de trade por semana.</canvas></div></div></div>
-  <div class="section"><div class="stitle">Empresa — atingimento vs meta (%)</div><div class="card"><div class="chart-wrap" style="height:180px"><canvas id="ch-emp" role="img" aria-label="Atingimento empresa">Atingimento empresa.</canvas></div></div></div>
-  <div class="section"><div class="stitle">Saude — consistencia da rotina (%)</div><div class="card"><div class="chart-wrap" style="height:180px"><canvas id="ch-saude" role="img" aria-label="Consistencia saude">Consistencia saude.</canvas></div></div></div>
-  <div class="section"><div class="stitle">Leitura — paginas por semana</div><div class="card"><div class="chart-wrap" style="height:160px"><canvas id="ch-livro" role="img" aria-label="Paginas lidas">Paginas lidas.</canvas></div></div></div>
-  <div class="section"><div class="stitle">Meditacao — mapa de consistencia</div><div class="card" id="med-card"></div></div>
+  <div class="section"><div class="stitle">Trade - resultado diario (R$)</div><div class="card"><div class="chart-wrap" style="height:190px"><canvas id="ch-trade" role="img" aria-label="Trade diario">Trade diario.</canvas></div></div></div>
+  <div class="section"><div class="stitle">Empresa - atingimento (%)</div><div class="card"><div class="chart-wrap" style="height:180px"><canvas id="ch-emp" role="img" aria-label="Atingimento">Atingimento.</canvas></div></div></div>
+  <div class="section"><div class="stitle">Saude - sono medio semanal</div><div class="card"><div class="chart-wrap" style="height:180px"><canvas id="ch-sono" role="img" aria-label="Sono">Sono.</canvas></div></div></div>
+  <div class="section"><div class="stitle">Saude - ansiedade media semanal</div><div class="card"><div class="chart-wrap" style="height:180px"><canvas id="ch-ans" role="img" aria-label="Ansiedade">Ansiedade.</canvas></div></div></div>
+  <div class="section"><div class="stitle">Leitura - paginas por semana</div><div class="card"><div class="chart-wrap" style="height:160px"><canvas id="ch-livro" role="img" aria-label="Paginas">Paginas.</canvas></div></div></div>
+  <div class="section"><div class="stitle">Meditacao - consistencia</div><div class="card" id="med-card"></div></div>
 </div>
 
 <!-- ANUAL -->
@@ -290,14 +253,14 @@ textarea{resize:vertical;min-height:60px;width:100%}
     <div class="card">
       <div class="frow"><span class="flabel">Faturamento acumulado (R$)</span><input type="number" id="fat-ac" style="width:130px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcAn()"></div>
       <div class="frow"><span class="flabel">Meta anual (R$)</span><input type="number" id="meta-an" style="width:130px;text-align:right" placeholder="4560000" inputmode="numeric" oninput="sv();calcAn()"></div>
-      <div class="frow"><span class="flabel">Progresso</span><span class="fval" id="an-emp">—</span></div>
+      <div class="frow"><span class="flabel">Progresso</span><span class="fval" id="an-emp">-</span></div>
       <div class="pbar" style="margin-top:6px"><div class="pfill" id="pb-an-emp" style="background:var(--green);width:0%"></div></div>
     </div>
     <div class="mgrid">
-      <div class="metric"><div class="metric-lbl">Q1 meta</div><div class="metric-val" style="font-size:14px">R$255k</div><div class="metric-sub">mar/26</div></div>
-      <div class="metric"><div class="metric-lbl">Q2 meta</div><div class="metric-val" style="font-size:14px">R$295k</div><div class="metric-sub">jun/26</div></div>
-      <div class="metric"><div class="metric-lbl">Q3 meta</div><div class="metric-val" style="font-size:14px">R$340k</div><div class="metric-sub">set/26</div></div>
-      <div class="metric"><div class="metric-lbl">Q4 meta</div><div class="metric-val" style="font-size:14px">R$380k</div><div class="metric-sub">dez/26</div></div>
+      <div class="metric"><div class="metric-lbl">Q1</div><div class="metric-val" style="font-size:14px">R$255k</div><div class="metric-sub">mar/26</div></div>
+      <div class="metric"><div class="metric-lbl">Q2</div><div class="metric-val" style="font-size:14px">R$295k</div><div class="metric-sub">jun/26</div></div>
+      <div class="metric"><div class="metric-lbl">Q3</div><div class="metric-val" style="font-size:14px">R$340k</div><div class="metric-sub">set/26</div></div>
+      <div class="metric"><div class="metric-lbl">Q4</div><div class="metric-val" style="font-size:14px">R$380k</div><div class="metric-sub">dez/26</div></div>
     </div>
   </div>
   <div class="section">
@@ -306,7 +269,7 @@ textarea{resize:vertical;min-height:60px;width:100%}
       <div class="frow"><span class="flabel">Resultado acumulado (R$)</span><input type="number" id="tr-ac" style="width:130px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcAn()"></div>
       <div class="frow"><span class="flabel">Semanas com stop ok</span><input type="number" id="st-ok" style="width:80px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcAn()"></div>
       <div class="frow"><span class="flabel">Total semanas operadas</span><input type="number" id="st-tot" style="width:80px;text-align:right" placeholder="0" inputmode="numeric" oninput="sv();calcAn()"></div>
-      <div class="frow"><span class="flabel">Disciplina de stop</span><span class="fval" id="an-stop">—</span></div>
+      <div class="frow"><span class="flabel">Disciplina de stop</span><span class="fval" id="an-stop">-</span></div>
     </div>
   </div>
   <div class="section">
@@ -314,24 +277,23 @@ textarea{resize:vertical;min-height:60px;width:100%}
     <div class="card">
       <div class="frow"><span class="flabel">Peso inicio do ano (kg)</span><input type="number" id="p0" style="width:85px;text-align:right" step="0.1" inputmode="decimal" oninput="sv();calcAn()"></div>
       <div class="frow"><span class="flabel">Peso atual (kg)</span><input type="number" id="pn" style="width:85px;text-align:right" step="0.1" inputmode="decimal" oninput="sv();calcAn()"></div>
-      <div class="frow"><span class="flabel">Meta: perder 5kg em 2026</span><span class="fval" id="an-peso">—</span></div>
+      <div class="frow"><span class="flabel">Meta: perder 5kg em 2026</span><span class="fval" id="an-peso">-</span></div>
       <div class="pbar" style="margin-top:6px"><div class="pfill" id="pb-peso" style="background:var(--amber);width:0%"></div></div>
     </div>
   </div>
   <div class="section">
     <div class="stitle">Leitura</div>
     <div class="card">
-      <div class="frow"><span class="flabel">Livros pessoais concluidos</span><span class="fval" id="an-livp">—</span></div>
-      <div class="frow"><span class="flabel">Livros profissionais concluidos</span><span class="fval" id="an-livt">—</span></div>
-      <div class="frow"><span class="flabel">Total de paginas lidas</span><span class="fval" id="an-pags">—</span></div>
+      <div class="frow"><span class="flabel">Livros pessoais concluidos</span><span class="fval" id="an-livp">-</span></div>
+      <div class="frow"><span class="flabel">Livros profissionais concluidos</span><span class="fval" id="an-livt">-</span></div>
+      <div class="frow"><span class="flabel">Total de paginas lidas</span><span class="fval" id="an-pags">-</span></div>
     </div>
   </div>
   <div class="section">
     <div class="stitle">Regras de ouro</div>
     <div class="card" style="font-size:13px;color:var(--txt2);line-height:1.9">
-      <div style="padding:5px 0;border-bottom:0.5px solid var(--border)">Meditacao, yoga, academia e pedal sao pre-requisitos, nao recompensas</div>
+      <div style="padding:5px 0;border-bottom:0.5px solid var(--border)">Meditacao, yoga, academia e pedal sao pre-requisitos</div>
       <div style="padding:5px 0;border-bottom:0.5px solid var(--border)">Se perder controle emocional, reduz carga imediatamente</div>
-      <div style="padding:5px 0;border-bottom:0.5px solid var(--border)">3 melhorias por semana na empresa — pequenas e consistentes</div>
       <div style="padding:5px 0;border-bottom:0.5px solid var(--border)">Stop diario no trade e inegociavel</div>
       <div style="padding:5px 0;border-bottom:0.5px solid var(--border)">1 livro pessoal + 1 profissional sempre em andamento</div>
       <div style="padding:5px 0">2026 nao e ano de ego. E ano de reconstrucao.</div>
@@ -339,232 +301,289 @@ textarea{resize:vertical;min-height:60px;width:100%}
   </div>
 </div>
 
-</div><!-- scroll-area -->
-</div><!-- app -->
+</div></div>
 <div class="toast" id="toast"></div>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
-const CIRCUM=138.2;
-let curWeek=wkey(new Date());
-let charts={};
+const TRADE_DAYS=['Segunda','Terca','Quarta','Quinta','Sexta'];
+const TRADE_KEYS=['seg','ter','qua','qui','sex'];
+const SAUDE_DAYS=['Seg','Ter','Qua','Qui','Sex','Sab','Dom'];
+const SAUDE_KEYS=['s0','s1','s2','s3','s4','s5','s6'];
+const CIRCUM=131.9;
+let curWeek=wkey(new Date()),curTradeDay='seg',curSaudeDay='s0',charts={};
 
 function wkey(d){const dt=new Date(d);dt.setHours(0,0,0,0);dt.setDate(dt.getDate()-dt.getDay()+1);return dt.toISOString().slice(0,10);}
-function wlabel(k){const d=new Date(k+'T12:00:00'),e=new Date(d);e.setDate(e.getDate()+6);const f=x=>x.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'});return f(d)+' – '+f(e);}
-function chgWeek(dir){const d=new Date(curWeek+'T12:00:00');d.setDate(d.getDate()+dir*7);curWeek=wkey(d);loadWeek();}
-function gd(){try{return JSON.parse(localStorage.getItem('planner26')||'{}')}catch(e){return{}}}
-function sd(x){try{localStorage.setItem('planner26',JSON.stringify(x))}catch(e){toast('Erro ao salvar')}}
+function wlabel(k){const d=new Date(k+'T12:00:00'),e=new Date(d);e.setDate(e.getDate()+6);const f=x=>x.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'});return f(d)+' - '+f(e);}
+function chgWeek(dir){const d=new Date(curWeek+'T12:00:00');d.setDate(d.getDate()+dir*7);curWeek=wkey(d);curTradeDay='seg';curSaudeDay='s0';loadWeek();}
+function gd(){try{return JSON.parse(localStorage.getItem('planner26v4')||'{}')}catch(e){return{}}}
+function sd(x){try{localStorage.setItem('planner26v4',JSON.stringify(x))}catch(e){}}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200);}
 
-const FIELDS=['foco','meta-fat','real-fat','kpi','bias','setup','fib','rr','ps','pp','pr','po','pw','pl','pso',
-  'rs','rp','rr2','ro','rw','rl2','rso','diario','peso','peso0','rev-pos','rev-aj','rev-em',
-  'ag-t','ag-r','ag-c','fat-ac','meta-an','tr-ac','st-ok','st-tot','p0','pn',
-  'bp-titulo','bp-autor','bp-total','bp-atual','bp-sem','bp-nota',
-  'bt-titulo','bt-autor','bt-total','bt-atual','bt-sem','bt-nota'];
+const FIELDS=['foco','meta-fat','real-fat','kpi','peso','peso0','rev-pos','rev-aj','rev-em','ag-t','ag-r','ag-c','fat-ac','meta-an','tr-ac','st-ok','st-tot','p0','pn','bp-titulo','bp-autor','bp-total','bp-atual','bp-sem','bp-nota','bt-titulo','bt-autor','bt-total','bt-atual','bt-sem','bt-nota'];
 
 function sv(){
   const d=gd();const w=d[curWeek]=d[curWeek]||{};
   FIELDS.forEach(id=>{const el=document.getElementById(id);if(el)w[id]=el.value;});
-  w.melhorias=getM();w.checks=getCks();w.scores=getScs();w.decisao=getDec();
+  w.melhorias=getM();w.checks=getCks();w.decisao=getDec();
+  w.trade=w.trade||{};w.trade[curTradeDay]=getTradeDay();
+  w.saude=w.saude||{};w.saude[curSaudeDay]=getSaudeDay();
   sd(d);
 }
+
 function loadWeek(){
   document.getElementById('wlbl').textContent=wlabel(curWeek);
   const w=gd()[curWeek]||{};
   FIELDS.forEach(id=>{const el=document.getElementById(id);if(el)el.value=w[id]||'';});
   renderM(w.melhorias||[{a:'',d:'',ok:false},{a:'',d:'',ok:false},{a:'',d:'',ok:false}]);
-  renderCks(w.checks||{});renderScs(w.scores||{});renderDec(w.decisao||'');
-  calcEmp();calcTr();calcAg();calcPeso();calcAn();calcLiv();renderHist();
+  renderCks(w.checks||{});renderDec(w.decisao||'');
+  calcEmp();calcAg();calcPeso();calcAn();calcLiv();renderHist();
+  renderTradeTabs();renderTradeDay();updateTradeWeekSum();
+  renderSaudeTabs();renderSaudeDay();updateSaudeWeekSum();
   document.getElementById('scroll-area').scrollTop=0;
 }
+
 function sw(tab,btn){
   ['empresa','trade','saude','leitura','revisao','stats','anual'].forEach(t=>document.getElementById('tab-'+t).classList.toggle('hidden',t!==tab));
   document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
   if(tab==='revisao')buildRev();if(tab==='stats')buildStats();if(tab==='anual')calcAnLivros();
+  if(tab==='trade'){renderTradeTabs();renderTradeDay();updateTradeWeekSum();}
+  if(tab==='saude'){renderSaudeTabs();renderSaudeDay();updateSaudeWeekSum();}
   document.getElementById('scroll-area').scrollTop=0;
 }
-function calcEmp(){
-  const m=parseFloat(document.getElementById('meta-fat').value)||0;
-  const r=parseFloat(document.getElementById('real-fat').value)||0;
-  if(!m){document.getElementById('m-at').textContent='—';document.getElementById('m-sal').textContent='—';return;}
-  const p=Math.round(r/m*100);document.getElementById('m-at').textContent=p+'%';document.getElementById('pb-fat').style.width=Math.min(p,100)+'%';
-  const s=r-m,el=document.getElementById('m-sal');
-  el.textContent=(s>=0?'+':'')+'R$'+Math.abs(Math.round(s)).toLocaleString('pt-BR');el.style.color=s>=0?'var(--green)':'var(--red)';
+
+// ============ TRADE ============
+function getTradeDay(){
+  const g=id=>{const el=document.getElementById(id);return el?el.value:'';};
+  return {prop:{bias:g('p-bias'),setup:g('p-setup'),rr:g('p-rr'),stop:g('p-stop'),profit:g('p-profit'),result:g('p-result'),ops:g('p-ops'),wins:g('p-wins'),loss:g('p-loss'),stopok:g('p-stopok')},real:{bias:g('r-bias'),setup:g('r-setup'),rr:g('r-rr'),stop:g('r-stop'),profit:g('r-profit'),result:g('r-result'),ops:g('r-ops'),wins:g('r-wins'),loss:g('r-loss'),stopok:g('r-stopok')},emoc:g('emoc-val'),diario:g('emoc-diario')};
 }
-function calcAg(){
-  const a=parseFloat(document.getElementById('ag-t').value)||0,r=parseFloat(document.getElementById('ag-r').value)||0,c=parseFloat(document.getElementById('ag-c').value)||0;
-  document.getElementById('tx-comp').textContent=a?Math.round(r/a*100)+'%':'—';
-  document.getElementById('tx-conv').textContent=r?Math.round(c/r*100)+'%':'—';
-}
-function calcTr(){
-  const pr=parseFloat(document.getElementById('pr').value)||0,rr=parseFloat(document.getElementById('rr2').value)||0,t=pr+rr;
-  const el=document.getElementById('m-trad');el.textContent=(t<0?'-':'')+'R$'+Math.abs(Math.round(t)).toLocaleString('pt-BR');el.style.color=t>=0?'var(--green)':'var(--red)';
-  const pw=parseFloat(document.getElementById('pw').value)||0,rw=parseFloat(document.getElementById('rw').value)||0;
-  const po=parseFloat(document.getElementById('po').value)||0,ro=parseFloat(document.getElementById('ro').value)||0,tot=po+ro;
-  document.getElementById('m-wr').textContent=tot?Math.round((pw+rw)/tot*100)+'%':'—';
-}
-function calcPeso(){
-  const i=parseFloat(document.getElementById('peso0').value)||0,c=parseFloat(document.getElementById('peso').value)||0;
-  if(!i||!c){document.getElementById('peso-d').textContent='—';return;}
-  const dv=(c-i).toFixed(1),el=document.getElementById('peso-d');
-  el.textContent=(dv>0?'+':'')+dv+' kg';el.style.color=parseFloat(dv)<=0?'var(--green)':'var(--red)';
-}
-function calcLiv(){
-  [['bp','rp-p','rp-pt','bp-pct-lbl','bp-est'],['bt','rp-t','rp-tt','bt-pct-lbl','bt-est']].forEach(([pre,ring,rtxt,lbl,est])=>{
-    const tot=parseFloat(document.getElementById(pre+'-total').value)||0;
-    const cur=parseFloat(document.getElementById(pre+'-atual').value)||0;
-    const sem=parseFloat(document.getElementById(pre+'-sem').value)||0;
-    const pct=tot?Math.min(Math.round(cur/tot*100),100):0;
-    document.getElementById(rtxt).textContent=pct+'%';
-    document.getElementById(ring).style.strokeDashoffset=CIRCUM-(CIRCUM*pct/100);
-    document.getElementById(lbl).textContent=cur+' de '+tot+' pgs';
-    if(sem>0&&tot>cur){const sr=Math.ceil((tot-cur)/sem);document.getElementById(est).textContent='~'+sr+' semana'+(sr!==1?'s':'');}
-    else document.getElementById(est).textContent=pct>=100?'Concluido!':'Estimativa: —';
+function renderTradeTabs(){
+  const w=gd()[curWeek]||{};const trade=w.trade||{};const c=document.getElementById('trade-day-tabs');c.innerHTML='';
+  TRADE_KEYS.forEach((dk,i)=>{
+    const td=trade[dk]||{};const has=td.prop&&td.prop.result;
+    const btn=document.createElement('button');btn.className='day-btn'+(dk===curTradeDay?' active':'')+(has?' has-data':'');
+    btn.textContent=TRADE_DAYS[i].slice(0,3);btn.onclick=()=>{curTradeDay=dk;renderTradeTabs();renderTradeDay();};c.appendChild(btn);
   });
 }
-function calcAn(){
-  const ac=parseFloat(document.getElementById('fat-ac').value)||0,meta=parseFloat(document.getElementById('meta-an').value)||4560000;
-  const p=meta?Math.round(ac/meta*100):0;document.getElementById('an-emp').textContent=p+'%';document.getElementById('pb-an-emp').style.width=Math.min(p,100)+'%';
-  const ok=parseFloat(document.getElementById('st-ok').value)||0,tot=parseFloat(document.getElementById('st-tot').value)||0;
-  document.getElementById('an-stop').textContent=tot?Math.round(ok/tot*100)+'%':'—';
-  const p0=parseFloat(document.getElementById('p0').value)||0,pn=parseFloat(document.getElementById('pn').value)||0;
-  if(p0&&pn){const perdeu=p0-pn,pct2=Math.min(Math.max(Math.round(perdeu/5*100),0),100);document.getElementById('an-peso').textContent=perdeu.toFixed(1)+'kg de 5kg ('+pct2+'%)';document.getElementById('pb-peso').style.width=pct2+'%';}
-  else document.getElementById('an-peso').textContent='—';
+function mkAcct(pre,data,label,cls){
+  const optB=()=>['Alta','Baixa','Lateral'].map(o=>'<option'+(data.bias===o?' selected':'')+'>'+o+'</option>').join('');
+  const optS=()=>['Bandeira','Halt','Pivot'].map(o=>'<option'+(data.setup===o?' selected':'')+'>'+o+'</option>').join('');
+  const optO=()=>['Sim','Nao','Parcial'].map(o=>'<option'+(data.stopok===o?' selected':'')+'>'+o+'</option>').join('');
+  return '<div class="acct-block"><div class="acct-hdr '+cls+'">'+label+'</div><div class="acct-body">'+
+    '<div class="frow"><span class="flabel">Bias do dia</span><select id="'+pre+'-bias" onchange="sv()" style="width:110px"><option value="">-</option>'+optB()+'</select></div>'+
+    '<div class="frow"><span class="flabel">Setup</span><select id="'+pre+'-setup" onchange="sv()" style="width:110px"><option value="">-</option>'+optS()+'</select></div>'+
+    '<div class="frow"><span class="flabel">R/R minimo</span><input type="text" id="'+pre+'-rr" style="width:70px;text-align:right" placeholder="1:3" value="'+(data.rr||'')+'" oninput="sv()"></div>'+
+    '<div class="frow"><span class="flabel">Stop diario (R$)</span><input type="number" id="'+pre+'-stop" style="width:100px;text-align:right" placeholder="0" value="'+(data.stop||'')+'" inputmode="numeric" oninput="sv()"></div>'+
+    '<div class="frow"><span class="flabel">Profit alvo (R$)</span><input type="number" id="'+pre+'-profit" style="width:100px;text-align:right" placeholder="0" value="'+(data.profit||'')+'" inputmode="numeric" oninput="sv()"></div>'+
+    '<div class="frow"><span class="flabel">Resultado (R$)</span><input type="number" id="'+pre+'-result" style="width:100px;text-align:right" placeholder="0" value="'+(data.result||'')+'" inputmode="numeric" oninput="sv();updateTradeTotal()"></div>'+
+    '<div class="frow"><span class="flabel">Ops / Win / Loss</span><div style="display:flex;gap:5px">'+
+    '<input type="number" id="'+pre+'-ops" style="width:46px;text-align:center" placeholder="ops" value="'+(data.ops||'')+'" inputmode="numeric" oninput="sv()">'+
+    '<input type="number" id="'+pre+'-wins" style="width:46px;text-align:center" placeholder="win" value="'+(data.wins||'')+'" inputmode="numeric" oninput="sv()">'+
+    '<input type="number" id="'+pre+'-loss" style="width:46px;text-align:center" placeholder="loss" value="'+(data.loss||'')+'" inputmode="numeric" oninput="sv()">'+
+    '</div></div>'+
+    '<div class="frow"><span class="flabel">Stop respeitado?</span><select id="'+pre+'-stopok" onchange="sv()" style="width:100px"><option value="">-</option>'+optO()+'</select></div>'+
+    '</div></div>';
 }
-function calcAnLivros(){
-  const d=gd();const hist=d._livros||[];
-  const p=hist.filter(x=>x.tipo==='p').length,t=hist.filter(x=>x.tipo==='t').length;
-  let pags=0;Object.keys(d).filter(k=>k.match(/^\d{4}-\d{2}-\d{2}$/)).forEach(k=>{const w=d[k]||{};pags+=(parseFloat(w['bp-sem'])||0)+(parseFloat(w['bt-sem'])||0);});
-  document.getElementById('an-livp').textContent=p+' livro'+(p!==1?'s':'');
-  document.getElementById('an-livt').textContent=t+' livro'+(t!==1?'s':'');
-  document.getElementById('an-pags').textContent=Math.round(pags).toLocaleString('pt-BR')+' paginas';
+function renderTradeDay(){
+  const w=gd()[curWeek]||{};const td=(w.trade||{})[curTradeDay]||{};
+  const p=td.prop||{};const r=td.real||{};
+  const pR=parseFloat(p.result||0),rR=parseFloat(r.result||0),tot=pR+rR;
+  const name=TRADE_DAYS[TRADE_KEYS.indexOf(curTradeDay)];
+  const eBtns=Array.from({length:10},(_,i)=>'<button class="sbtn'+(td.emoc==i+1?' sel':'')+'" onclick="selEmoc(this)" data-v="'+(i+1)+'">'+(i+1)+'</button>').join('');
+  document.getElementById('trade-day-content').innerHTML=
+    '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">'+
+    '<div style="font-size:15px;font-weight:700;color:var(--txt)">'+name+'-feira</div>'+
+    '<div id="trade-day-total" style="font-size:15px;font-weight:700;color:'+(tot>=0?'var(--green)':'var(--red)')+'">'+(tot===0&&!p.result&&!r.result?'-':(tot<0?'-':'')+'R$'+Math.abs(Math.round(tot)).toLocaleString('pt-BR'))+'</div>'+
+    '</div>'+
+    mkAcct('p',p,'Mesa Proprietaria - 15 contratos','prop')+
+    mkAcct('r',r,'Conta Real - 4 contratos','real')+
+    '<div class="card"><div style="margin-bottom:10px"><div class="flabel" style="margin-bottom:7px">Nota emocional do dia (1-10)</div>'+
+    '<div class="srow" id="sc-emoc">'+eBtns+'</div><input type="hidden" id="emoc-val" value="'+(td.emoc||'')+'"></div>'+
+    '<textarea id="emoc-diario" placeholder="Diario emocional do dia..." oninput="sv()">'+(td.diario||'')+'</textarea></div>';
+  updateTradeWeekSum();
 }
-function getM(){return Array.from(document.querySelectorAll('#melh-list .mrow')).map(r=>({a:r.querySelector('.m-a').value,d:r.querySelector('.m-d').value,ok:r.querySelector('.m-ok').checked}));}
-function renderM(list){
-  const c=document.getElementById('melh-list');c.innerHTML='';
-  list.forEach(m=>{const row=document.createElement('div');row.className='mrow';row.innerHTML=`<input type="text" class="m-a" placeholder="Area" value="${m.a||''}" oninput="sv()"><input type="text" class="m-d" placeholder="Descricao" value="${m.d||''}" oninput="sv()"><label style="display:flex;align-items:center;gap:5px;font-size:12px;cursor:pointer;justify-content:center"><input type="checkbox" class="m-ok" ${m.ok?'checked':''} onchange="sv()"> ok</label>`;c.appendChild(row);});
+function selEmoc(btn){document.querySelectorAll('#sc-emoc .sbtn').forEach(b=>b.classList.remove('sel'));btn.classList.add('sel');document.getElementById('emoc-val').value=btn.dataset.v;sv();}
+function updateTradeTotal(){
+  const p=parseFloat(document.getElementById('p-result')?.value||0),r=parseFloat(document.getElementById('r-result')?.value||0),t=p+r;
+  const el=document.getElementById('trade-day-total');if(el){el.textContent=(t<0?'-':'')+'R$'+Math.abs(Math.round(t)).toLocaleString('pt-BR');el.style.color=t>=0?'var(--green)':'var(--red)';}
+  updateTradeWeekSum();
 }
-function addM(){const m=getM();m.push({a:'',d:'',ok:false});renderM(m);}
-const CK_CFG={med:{labels:['Seg','Ter','Qua','Qui','Sex','Sab','Dom'],target:7},yoga:{labels:['Realizado'],target:1},ac:{labels:['Treino 1','Treino 2','Treino 3'],target:3},ped:{labels:['Pedal 1','Pedal 2','Pedal 3'],target:3}};
+function updateTradeWeekSum(){
+  const w=gd()[curWeek]||{};const tr=w.trade||{};let tP=0,tR=0,tO=0,tW=0,viol=false;
+  TRADE_KEYS.forEach(dk=>{const td=tr[dk]||{};tP+=parseFloat(td.prop?.result||0);tR+=parseFloat(td.real?.result||0);tO+=parseFloat(td.prop?.ops||0)+parseFloat(td.real?.ops||0);tW+=parseFloat(td.prop?.wins||0)+parseFloat(td.real?.wins||0);if(td.prop?.stopok==='Nao'||td.real?.stopok==='Nao')viol=true;});
+  const tot=tP+tR,wr=tO?Math.round(tW/tO*100):null;
+  document.getElementById('trade-week-sum').innerHTML=
+    '<div class="metric"><div class="metric-lbl">Mesa prop</div><div class="metric-val" style="font-size:14px;color:'+(tP>=0?'var(--green)':'var(--red)')+'">'+(tP<0?'-':'')+'R$'+Math.abs(Math.round(tP)).toLocaleString('pt-BR')+'</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Conta real</div><div class="metric-val" style="font-size:14px;color:'+(tR>=0?'var(--green)':'var(--red)')+'">'+(tR<0?'-':'')+'R$'+Math.abs(Math.round(tR)).toLocaleString('pt-BR')+'</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Total semana</div><div class="metric-val" style="font-size:14px;color:'+(tot>=0?'var(--green)':'var(--red)')+'">'+(tot<0?'-':'')+'R$'+Math.abs(Math.round(tot)).toLocaleString('pt-BR')+'</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Win rate</div><div class="metric-val" style="font-size:14px">'+(wr!==null?wr+'%':'-')+'</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Stop</div><div class="metric-val" style="font-size:13px;color:'+(viol?'var(--red)':'var(--green)')+'">'+( viol?'Violado':'Ok')+'</div></div>';
+}
+
+// ============ SAUDE DIARIA ============
+function getSaudeDay(){
+  const g=id=>{const el=document.getElementById(id);return el?el.value:'';};
+  const getSc=id=>{const el=document.querySelector('#'+id+' .smini.sel');return el?el.dataset.v:'';};
+  return {med:g('sd-med-val'),sono:getSc('sd-sono'),alim:getSc('sd-alim'),ans:getSc('sd-ans'),nota:g('sd-nota')};
+}
+
+function renderSaudeTabs(){
+  const w=gd()[curWeek]||{};const saude=w.saude||{};const c=document.getElementById('saude-day-tabs');c.innerHTML='';
+  SAUDE_KEYS.forEach((sk,i)=>{
+    const sd=saude[sk]||{};const has=sd.sono||sd.alim||sd.ans||sd.med;
+    const btn=document.createElement('button');btn.className='day-btn'+(sk===curSaudeDay?' active':'')+(has?' has-data':'');
+    btn.textContent=SAUDE_DAYS[i];btn.onclick=()=>{curSaudeDay=sk;renderSaudeTabs();renderSaudeDay();};c.appendChild(btn);
+  });
+}
+
+function mkScoreMini(containerId,val,onchange){
+  return '<div class="score-mini" id="'+containerId+'">'+
+    Array.from({length:10},(_,i)=>'<button class="smini'+(val==i+1?' sel':'')+'" data-v="'+(i+1)+'" onclick="selScoreMini(this,\''+containerId+'\')">'+( i+1)+'</button>').join('')+
+    '</div>';
+}
+
+function selScoreMini(btn,containerId){
+  document.querySelectorAll('#'+containerId+' .smini').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');sv();updateSaudeWeekSum();
+}
+
+function renderSaudeDay(){
+  const w=gd()[curWeek]||{};const sd=(w.saude||{})[curSaudeDay]||{};
+  const dayName=SAUDE_DAYS[SAUDE_KEYS.indexOf(curSaudeDay)];
+  const medChecked=sd.med==='1';
+  document.getElementById('saude-day-content').innerHTML=
+    '<div style="font-size:15px;font-weight:700;color:var(--txt);margin-bottom:10px">'+dayName+'</div>'+
+    '<div class="card">'+
+    '<div class="frow"><span class="flabel">Meditacao feita?</span>'+
+    '<label style="display:flex;align-items:center;gap:8px;cursor:pointer">'+
+    '<input type="checkbox" id="sd-med-val" value="1" '+(medChecked?'checked':'')+' onchange="sv();updateSaudeWeekSum()" style="width:20px;height:20px;accent-color:var(--purple)">'+
+    '<span style="font-size:13px;color:var(--txt)">'+(medChecked?'Sim':'Nao')+'</span></label></div>'+
+    '<div style="margin-top:10px">'+
+    '<div class="flabel" style="margin-bottom:7px">Sono (1=pessimo · 10=otimo)</div>'+
+    mkScoreMini('sd-sono',sd.sono,'sv()')+
+    '</div><div class="div"></div>'+
+    '<div><div class="flabel" style="margin-bottom:7px">Alimentacao (1=pessima · 10=otima)</div>'+
+    mkScoreMini('sd-alim',sd.alim,'sv()')+
+    '</div><div class="div"></div>'+
+    '<div><div class="flabel" style="margin-bottom:7px">Ansiedade (1=alta · 10=calmo)</div>'+
+    mkScoreMini('sd-ans',sd.ans,'sv()')+
+    '</div><div class="div"></div>'+
+    '<div style="margin-top:4px"><div class="flabel" style="margin-bottom:6px">Nota do dia</div>'+
+    '<textarea id="sd-nota" placeholder="Como foi o dia? Algo relevante para registrar..." oninput="sv()">'+(sd.nota||'')+'</textarea></div>'+
+    '</div>';
+
+  const cb=document.getElementById('sd-med-val');
+  if(cb)cb.addEventListener('change',function(){this.nextElementSibling.textContent=this.checked?'Sim':'Nao';});
+  updateSaudeWeekSum();
+}
+
+function updateSaudeWeekSum(){
+  const w=gd()[curWeek]||{};const saude=w.saude||{};
+  let medCount=0,sonoSum=0,sonoN=0,alimSum=0,alimN=0,ansSum=0,ansN=0;
+  SAUDE_KEYS.forEach(sk=>{
+    const sd=saude[sk]||{};
+    if(sd.med==='1')medCount++;
+    if(sd.sono){sonoSum+=parseInt(sd.sono);sonoN++;}
+    if(sd.alim){alimSum+=parseInt(sd.alim);alimN++;}
+    if(sd.ans){ansSum+=parseInt(sd.ans);ansN++;}
+  });
+  const avgSono=sonoN?Math.round(sonoSum/sonoN*10)/10:null;
+  const avgAlim=alimN?Math.round(alimSum/alimN*10)/10:null;
+  const avgAns=ansN?Math.round(ansSum/ansN*10)/10:null;
+  const ansColor=avgAns?avgAns>=7?'var(--green)':avgAns>=4?'var(--amber)':'var(--red)':'var(--txt)';
+  const sonoColor=avgSono?avgSono>=7?'var(--green)':avgSono>=5?'var(--amber)':'var(--red)':'var(--txt)';
+  document.getElementById('saude-week-sum').innerHTML=
+    '<div class="metric"><div class="metric-lbl">Meditacao</div><div class="metric-val" style="color:'+(medCount===7?'var(--green)':medCount>=4?'var(--amber)':'var(--red)')+'">'+medCount+'/7</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Sono medio</div><div class="metric-val" style="color:'+sonoColor+'">'+(avgSono!==null?avgSono:'-')+'</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Aliment. media</div><div class="metric-val">'+(avgAlim!==null?avgAlim:'-')+'</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Ansiedade media</div><div class="metric-val" style="color:'+ansColor+'">'+(avgAns!==null?avgAns:'-')+'</div></div>';
+}
+
+// ============ CHECKS (yoga, ac, ped) ============
+const CK_CFG={yoga:{labels:['Realizado']},ac:{labels:['Treino 1','Treino 2','Treino 3']},ped:{labels:['Pedal 1','Pedal 2','Pedal 3']}};
 function getCks(){const r={};Object.keys(CK_CFG).forEach(k=>{r[k]=Array.from(document.querySelectorAll('#ck-'+k+' .ci')).map(el=>el.classList.contains('done'));});return r;}
-function renderCks(checks){
-  Object.entries(CK_CFG).forEach(([k,cfg])=>{
-    const c=document.getElementById('ck-'+k);c.innerHTML='';
-    cfg.labels.forEach((lbl,i)=>{
-      const done=(checks[k]&&checks[k][i])||false;
-      const el=document.createElement('div');el.className='ci'+(done?' done':'');
-      el.innerHTML=`<div class="bx">${done?'✓':''}</div><span>${lbl}</span>`;
-      el.onclick=()=>{el.classList.toggle('done');el.querySelector('.bx').textContent=el.classList.contains('done')?'✓':'';sv();};
-      c.appendChild(el);
-    });
-  });
-}
-function getScs(){const s={};['trade','sono','alim','ans'].forEach(id=>{const el=document.querySelector('#sc-'+id+' .sel');s[id]=el?el.dataset.v:'';});return s;}
-function renderScs(scores){
-  ['trade','sono','alim','ans'].forEach(id=>{
-    const c=document.getElementById('sc-'+id);if(!c)return;c.innerHTML='';
-    for(let i=1;i<=10;i++){const b=document.createElement('button');b.className='sbtn'+(scores[id]==i?' sel':'');b.dataset.v=i;b.textContent=i;b.onclick=()=>{c.querySelectorAll('.sbtn').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');sv();};c.appendChild(b);}
-  });
-}
+function renderCks(checks){Object.entries(CK_CFG).forEach(([k,cfg])=>{const c=document.getElementById('ck-'+k);if(!c)return;c.innerHTML='';cfg.labels.forEach((lbl,i)=>{const done=(checks[k]&&checks[k][i])||false;const el=document.createElement('div');el.className='ci'+(done?' done':'');el.innerHTML='<div class="bx">'+(done?'v':'')+'</div><span>'+lbl+'</span>';el.onclick=()=>{el.classList.toggle('done');el.querySelector('.bx').textContent=el.classList.contains('done')?'v':'';sv();};c.appendChild(el);});});}
+
+// ============ EMPRESA ============
+function calcEmp(){const m=parseFloat(document.getElementById('meta-fat').value)||0,r=parseFloat(document.getElementById('real-fat').value)||0;if(!m){document.getElementById('m-at').textContent='-';document.getElementById('m-sal').textContent='-';return;}const p=Math.round(r/m*100);document.getElementById('m-at').textContent=p+'%';document.getElementById('pb-fat').style.width=Math.min(p,100)+'%';const s=r-m,el=document.getElementById('m-sal');el.textContent=(s>=0?'+':'')+'R$'+Math.abs(Math.round(s)).toLocaleString('pt-BR');el.style.color=s>=0?'var(--green)':'var(--red)';}
+function calcAg(){const a=parseFloat(document.getElementById('ag-t').value)||0,r=parseFloat(document.getElementById('ag-r').value)||0,c=parseFloat(document.getElementById('ag-c').value)||0;document.getElementById('tx-comp').textContent=a?Math.round(r/a*100)+'%':'-';document.getElementById('tx-conv').textContent=r?Math.round(c/r*100)+'%':'-';}
+function calcPeso(){const i=parseFloat(document.getElementById('peso0').value)||0,c=parseFloat(document.getElementById('peso').value)||0;if(!i||!c){document.getElementById('peso-d').textContent='-';return;}const dv=(c-i).toFixed(1),el=document.getElementById('peso-d');el.textContent=(dv>0?'+':'')+dv+' kg';el.style.color=parseFloat(dv)<=0?'var(--green)':'var(--red)';}
+function calcLiv(){[['bp','rp-p','rp-pt','bp-pct-lbl','bp-est'],['bt','rp-t','rp-tt','bt-pct-lbl','bt-est']].forEach(([pre,ring,rtxt,lbl,est])=>{const tot=parseFloat(document.getElementById(pre+'-total').value)||0,cur=parseFloat(document.getElementById(pre+'-atual').value)||0,sem=parseFloat(document.getElementById(pre+'-sem').value)||0,pct=tot?Math.min(Math.round(cur/tot*100),100):0;document.getElementById(rtxt).textContent=pct+'%';document.getElementById(ring).style.strokeDashoffset=CIRCUM-(CIRCUM*pct/100);document.getElementById(lbl).textContent=cur+' de '+tot+' pgs';if(sem>0&&tot>cur){const sr=Math.ceil((tot-cur)/sem);document.getElementById(est).textContent='~'+sr+' semana'+(sr!==1?'s':'');}else document.getElementById(est).textContent=pct>=100?'Concluido!':'Estimativa: -';});}
+function calcAn(){const ac=parseFloat(document.getElementById('fat-ac').value)||0,meta=parseFloat(document.getElementById('meta-an').value)||4560000,p=meta?Math.round(ac/meta*100):0;document.getElementById('an-emp').textContent=p+'%';document.getElementById('pb-an-emp').style.width=Math.min(p,100)+'%';const ok=parseFloat(document.getElementById('st-ok').value)||0,tot=parseFloat(document.getElementById('st-tot').value)||0;document.getElementById('an-stop').textContent=tot?Math.round(ok/tot*100)+'%':'-';const p0=parseFloat(document.getElementById('p0').value)||0,pn=parseFloat(document.getElementById('pn').value)||0;if(p0&&pn){const perdeu=p0-pn,pct2=Math.min(Math.max(Math.round(perdeu/5*100),0),100);document.getElementById('an-peso').textContent=perdeu.toFixed(1)+'kg de 5kg ('+pct2+'%)';document.getElementById('pb-peso').style.width=pct2+'%';}else document.getElementById('an-peso').textContent='-';}
+function calcAnLivros(){const d=gd();const hist=d._livros||[];document.getElementById('an-livp').textContent=hist.filter(x=>x.tipo==='p').length+' livros';document.getElementById('an-livt').textContent=hist.filter(x=>x.tipo==='t').length+' livros';let pags=0;Object.keys(d).filter(k=>k.match(/^\d{4}-\d{2}-\d{2}$/)).forEach(k=>{const w=d[k]||{};pags+=(parseFloat(w['bp-sem'])||0)+(parseFloat(w['bt-sem'])||0);});document.getElementById('an-pags').textContent=Math.round(pags).toLocaleString('pt-BR')+' paginas';}
+
+// ============ MELHORIAS ============
+function getM(){return Array.from(document.querySelectorAll('#melh-list .mrow')).map(r=>({a:r.querySelector('.m-a').value,d:r.querySelector('.m-d').value,ok:r.querySelector('.m-ok').checked}));}
+function renderM(list){const c=document.getElementById('melh-list');c.innerHTML='';list.forEach(m=>{const row=document.createElement('div');row.className='mrow';row.innerHTML='<input type="text" class="m-a" placeholder="Area" value="'+(m.a||'')+'" oninput="sv()"><input type="text" class="m-d" placeholder="Descricao" value="'+(m.d||'')+'" oninput="sv()"><label style="display:flex;align-items:center;gap:5px;font-size:12px;cursor:pointer;justify-content:center"><input type="checkbox" class="m-ok" '+(m.ok?'checked':'')+' onchange="sv()"> ok</label>';c.appendChild(row);});}
+function addM(){const m=getM();m.push({a:'',d:'',ok:false});renderM(m);}
+
+// ============ DECISAO ============
 function getDec(){const s=document.querySelector('#dec-grid .btnp');return s?s.dataset.d:'';}
-function renderDec(val){
-  const g=document.getElementById('dec-grid');g.innerHTML='';
-  ['Manter ritmo','Acelerar','Reduzir carga','Revisar estrategia'].forEach(o=>{
-    const b=document.createElement('button');b.className='btn'+(val===o?' btnp':'');b.dataset.d=o;b.textContent=o;
-    b.onclick=()=>{g.querySelectorAll('.btn').forEach(x=>x.classList.remove('btnp'));b.classList.add('btnp');sv();};g.appendChild(b);
-  });
-}
-function concluirLivro(tipo){
-  const pre=tipo==='p'?'bp':'bt';
-  const titulo=document.getElementById(pre+'-titulo').value||'Sem titulo';
-  const autor=document.getElementById(pre+'-autor').value||'—';
-  const d=gd();d._livros=d._livros||[];
-  d._livros.push({tipo,titulo,autor,semana:curWeek,data:new Date().toLocaleDateString('pt-BR')});
-  sd(d);renderHist();toast('Livro concluido!');
-}
-function renderHist(){
-  const d=gd();const h=d._livros||[];const c=document.getElementById('livros-hist');
-  if(!h.length){c.innerHTML='<span style="color:var(--txt2)">Nenhum livro concluido ainda.</span>';return;}
-  c.innerHTML=h.slice().reverse().map(x=>`<div style="padding:6px 0;border-bottom:0.5px solid var(--border);display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span class="badge ${x.tipo==='p'?'badge-p':'badge-t'}" style="margin:0">${x.tipo==='p'?'Pessoal':'Profissional'}</span><span style="font-size:13px;font-weight:600;color:var(--txt)">${x.titulo}</span><span style="font-size:12px;color:var(--txt2)">${x.autor}</span><span style="font-size:12px;color:var(--txt3);margin-left:auto">${x.data}</span></div>`).join('');
-}
+function renderDec(val){const g=document.getElementById('dec-grid');g.innerHTML='';['Manter ritmo','Acelerar','Reduzir carga','Revisar estrategia'].forEach(o=>{const b=document.createElement('button');b.className='btn'+(val===o?' btnp':'');b.dataset.d=o;b.textContent=o;b.onclick=()=>{g.querySelectorAll('.btn').forEach(x=>x.classList.remove('btnp'));b.classList.add('btnp');sv();};g.appendChild(b);});}
+
+// ============ LIVROS ============
+function concluirLivro(tipo){const pre=tipo==='p'?'bp':'bt';const titulo=document.getElementById(pre+'-titulo').value||'Sem titulo';const autor=document.getElementById(pre+'-autor').value||'-';const d=gd();d._livros=d._livros||[];d._livros.push({tipo,titulo,autor,data:new Date().toLocaleDateString('pt-BR')});sd(d);renderHist();toast('Livro concluido!');}
+function renderHist(){const d=gd();const h=d._livros||[];const c=document.getElementById('livros-hist');if(!h.length){c.innerHTML='<span style="color:var(--txt2)">Nenhum livro concluido ainda.</span>';return;}c.innerHTML=h.slice().reverse().map(x=>'<div style="padding:6px 0;border-bottom:0.5px solid var(--border);display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span class="badge '+(x.tipo==='p'?'badge-p':'badge-t')+'" style="margin:0">'+(x.tipo==='p'?'Pessoal':'Profissional')+'</span><span style="font-size:13px;font-weight:600;color:var(--txt)">'+x.titulo+'</span><span style="font-size:12px;color:var(--txt2)">'+x.autor+'</span><span style="font-size:12px;color:var(--txt3);margin-left:auto">'+x.data+'</span></div>').join('');}
+
+// ============ REVISAO ============
 function buildRev(){
-  const d=gd();const w=d[curWeek]||{};const ck=w.checks||{};
-  const medDone=(ck.med||[]).filter(Boolean).length,yogaDone=(ck.yoga||[]).filter(Boolean).length;
-  const acDone=(ck.ac||[]).filter(Boolean).length,pedDone=(ck.ped||[]).filter(Boolean).length;
-  const melh=w.melhorias||[];const mDone=melh.filter(m=>m.ok).length;
+  const d=gd();const w=d[curWeek]||{};const ck=w.checks||{};const saude=w.saude||{};
+  let medCount=0;SAUDE_KEYS.forEach(sk=>{if((saude[sk]||{}).med==='1')medCount++;});
+  const yoga=(ck.yoga||[]).filter(Boolean).length,ac=(ck.ac||[]).filter(Boolean).length,ped=(ck.ped||[]).filter(Boolean).length;
+  const mDone=(w.melhorias||[]).filter(m=>m.ok).length;
+  const trade=w.trade||{};let total=0,viol=false;
+  TRADE_KEYS.forEach(dk=>{const td=trade[dk]||{};total+=parseFloat(td.prop?.result||0)+parseFloat(td.real?.result||0);if(td.prop?.stopok==='Nao'||td.real?.stopok==='Nao')viol=true;});
   const alerts=[];
-  if(medDone<7)alerts.push({c:'aa',t:'Meditacao: '+medDone+'/7 dias concluidos'});else alerts.push({c:'ag',t:'Meditacao completa — 7/7 dias'});
-  if(yogaDone<1)alerts.push({c:'aa',t:'Yoga nao marcado esta semana'});else alerts.push({c:'ag',t:'Yoga realizado'});
-  if(acDone<3)alerts.push({c:'aa',t:'Academia: '+acDone+'/3 sessoes'});
-  if(pedDone<3)alerts.push({c:'aa',t:'Pedal: '+pedDone+'/3 sessoes'});
-  if(mDone>=3)alerts.push({c:'ag',t:'3 melhorias da empresa concluidas'});else alerts.push({c:'aa',t:'Melhorias empresa: '+mDone+'/3'});
-  const pso=w['pso']||'',rso=w['rso']||'';
-  if(pso==='Nao'||rso==='Nao')alerts.push({c:'ar',t:'Stop diario violado — revisar diario emocional'});
-  else if(pso==='Sim'&&rso==='Sim')alerts.push({c:'ag',t:'Stop respeitado em ambas as contas'});
-  document.getElementById('rev-alerts').innerHTML=alerts.map(a=>`<div class="alert ${a.c}">${a.t}</div>`).join('');
-  const pr=(parseFloat(w.pr||0)+parseFloat(w.rr2||0));
-  const mf=parseFloat(w['meta-fat']||0),rf=parseFloat(w['real-fat']||0);
-  const bpSem=parseFloat(w['bp-sem']||0),btSem=parseFloat(w['bt-sem']||0);
-  document.getElementById('res-metrics').innerHTML=`
-    <div class="metric"><div class="metric-lbl">Trade</div><div class="metric-val" style="font-size:15px;color:${pr>=0?'var(--green)':'var(--red)'}">${(pr<0?'-':'')+'R$'+Math.abs(Math.round(pr)).toLocaleString('pt-BR')}</div></div>
-    <div class="metric"><div class="metric-lbl">Empresa</div><div class="metric-val" style="font-size:15px">${mf?Math.round(rf/mf*100)+'%':'—'}</div></div>
-    <div class="metric"><div class="metric-lbl">Meditacao</div><div class="metric-val" style="font-size:15px">${medDone}/7</div></div>
-    <div class="metric"><div class="metric-lbl">Academia</div><div class="metric-val" style="font-size:15px">${acDone}/3</div></div>
-    <div class="metric"><div class="metric-lbl">Pedal</div><div class="metric-val" style="font-size:15px">${pedDone}/3</div></div>
-    <div class="metric"><div class="metric-lbl">Melhorias</div><div class="metric-val" style="font-size:15px">${mDone}/3</div></div>
-    <div class="metric"><div class="metric-lbl">Paginas</div><div class="metric-val" style="font-size:15px">${Math.round(bpSem+btSem)}</div></div>`;
+  if(medCount<7)alerts.push({c:'aa',t:'Meditacao: '+medCount+'/7 dias'});else alerts.push({c:'ag',t:'Meditacao completa - 7/7'});
+  if(yoga<1)alerts.push({c:'aa',t:'Yoga nao marcado esta semana'});else alerts.push({c:'ag',t:'Yoga realizado'});
+  if(ac<3)alerts.push({c:'aa',t:'Academia: '+ac+'/3'});if(ped<3)alerts.push({c:'aa',t:'Pedal: '+ped+'/3'});
+  if(mDone>=3)alerts.push({c:'ag',t:'3 melhorias concluidas'});else alerts.push({c:'aa',t:'Melhorias: '+mDone+'/3'});
+  if(viol)alerts.push({c:'ar',t:'Stop violado em algum dia da semana'});else if(total!==0)alerts.push({c:'ag',t:'Stop respeitado em todos os dias'});
+  document.getElementById('rev-alerts').innerHTML=alerts.map(a=>'<div class="alert '+a.c+'">'+a.t+'</div>').join('');
+  const mf=parseFloat(w['meta-fat']||0),rf=parseFloat(w['real-fat']||0),bp=parseFloat(w['bp-sem']||0),bt=parseFloat(w['bt-sem']||0);
+  document.getElementById('res-metrics').innerHTML=
+    '<div class="metric"><div class="metric-lbl">Trade</div><div class="metric-val" style="font-size:14px;color:'+(total>=0?'var(--green)':'var(--red)')+'">'+(total<0?'-':'')+'R$'+Math.abs(Math.round(total)).toLocaleString('pt-BR')+'</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Empresa</div><div class="metric-val" style="font-size:14px">'+(mf?Math.round(rf/mf*100)+'%':'-')+'</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Meditacao</div><div class="metric-val" style="font-size:14px">'+medCount+'/7</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Academia</div><div class="metric-val" style="font-size:14px">'+ac+'/3</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Pedal</div><div class="metric-val" style="font-size:14px">'+ped+'/3</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Melhorias</div><div class="metric-val" style="font-size:14px">'+mDone+'/3</div></div>'+
+    '<div class="metric"><div class="metric-lbl">Paginas</div><div class="metric-val" style="font-size:14px">'+Math.round(bp+bt)+'</div></div>';
 }
+
+// ============ STATS ============
+function getSaudeAvg(d,weeks,field){return weeks.map(k=>{const saude=(d[k]?.saude)||{};let sum=0,n=0;SAUDE_KEYS.forEach(sk=>{const v=parseInt(saude[sk]?.[field]||0);if(v){sum+=v;n++;}});return n?Math.round(sum/n*10)/10:null;});}
+
 function buildStats(){
-  const d=gd();
-  const weeks=Object.keys(d).filter(k=>k.match(/^\d{4}-\d{2}-\d{2}$/)).sort();
-  const labels=weeks.map(k=>{const dt=new Date(k+'T12:00:00');return dt.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'});});
+  const d=gd();const weeks=Object.keys(d).filter(k=>k.match(/^\d{4}-\d{2}-\d{2}$/)).sort();
   const isDark=matchMedia('(prefers-color-scheme: dark)').matches;
   const gc=isDark?'rgba(255,255,255,0.08)':'rgba(0,0,0,0.07)',tc=isDark?'#9ca3af':'#6b7280';
-  const base={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:tc,font:{size:10},autoSkip:true,maxTicksLimit:8},grid:{color:gc}},y:{ticks:{color:tc,font:{size:10}},grid:{color:gc}}}};
-  const trData=weeks.map(k=>{const w=d[k]||{};return Math.round(parseFloat(w.pr||0)+parseFloat(w.rr2||0));});
-  const empData=weeks.map(k=>{const w=d[k]||{};const m=parseFloat(w['meta-fat']||0),r=parseFloat(w['real-fat']||0);return m?Math.round(r/m*100):null;});
-  const saudeData=weeks.map(k=>{const w=d[k]||{};const ck=w.checks||{};const med=(ck.med||[]).filter(Boolean).length,yoga=(ck.yoga||[]).filter(Boolean).length,ac=(ck.ac||[]).filter(Boolean).length,ped=(ck.ped||[]).filter(Boolean).length;return Math.round((med/7+yoga+ac/3+ped/3)/4*100);});
-  const livPData=weeks.map(k=>Math.round(parseFloat((d[k]||{})['bp-sem']||0)));
-  const livTData=weeks.map(k=>Math.round(parseFloat((d[k]||{})['bt-sem']||0)));
-  [['ch-trade',{type:'bar',data:{labels,datasets:[{data:trData,backgroundColor:trData.map(v=>v>=0?'#1D9E75':'#E24B4A'),borderRadius:3}]},options:{...base,scales:{...base.scales,y:{...base.scales.y,ticks:{...base.scales.y.ticks,callback:v=>'R$'+Math.round(v).toLocaleString('pt-BR')}}}}}],
-   ['ch-emp',{type:'line',data:{labels,datasets:[{data:empData,borderColor:'#378ADD',backgroundColor:'rgba(55,138,221,0.12)',tension:.3,fill:true,pointRadius:3,spanGaps:true}]},options:{...base,scales:{...base.scales,y:{...base.scales.y,ticks:{...base.scales.y.ticks,callback:v=>v+'%'}}}}}],
-   ['ch-saude',{type:'line',data:{labels,datasets:[{data:saudeData,borderColor:'#1D9E75',backgroundColor:'rgba(29,158,117,0.12)',tension:.3,fill:true,pointRadius:3}]},options:{...base,scales:{...base.scales,y:{...base.scales.y,min:0,max:100,ticks:{...base.scales.y.ticks,callback:v=>v+'%'}}}}}],
-   ['ch-livro',{type:'bar',data:{labels,datasets:[{label:'Pessoal',data:livPData,backgroundColor:'#534AB7',borderRadius:3},{label:'Profissional',data:livTData,backgroundColor:'#185FA5',borderRadius:3}]},options:{...base,scales:{...base.scales,x:{...base.scales.x,stacked:true},y:{...base.scales.y,stacked:true}}}}]
+  const base={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:tc,font:{size:10},autoSkip:true,maxTicksLimit:10},grid:{color:gc}},y:{ticks:{color:tc,font:{size:10}},grid:{color:gc}}}};
+  const dL=[],dD=[];
+  weeks.forEach(wk=>{const tr=(d[wk]?.trade)||{};TRADE_KEYS.forEach((dk,i)=>{const td=tr[dk]||{};const t=parseFloat(td.prop?.result||0)+parseFloat(td.real?.result||0);if(t!==0){dL.push(TRADE_DAYS[i].slice(0,3));dD.push(Math.round(t));}});});
+  const wL=weeks.map(k=>{const dt=new Date(k+'T12:00:00');return dt.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'});});
+  const eD=weeks.map(k=>{const w=d[k]||{};const m=parseFloat(w['meta-fat']||0),r=parseFloat(w['real-fat']||0);return m?Math.round(r/m*100):null;});
+  const sonoD=getSaudeAvg(d,weeks,'sono');
+  const ansD=getSaudeAvg(d,weeks,'ans');
+  const lP=weeks.map(k=>Math.round(parseFloat((d[k]||{})['bp-sem']||0))),lT=weeks.map(k=>Math.round(parseFloat((d[k]||{})['bt-sem']||0)));
+  [['ch-trade',{type:'bar',data:{labels:dL,datasets:[{data:dD,backgroundColor:dD.map(v=>v>=0?'#1D9E75':'#E24B4A'),borderRadius:3}]},options:{...base,scales:{...base.scales,y:{...base.scales.y,ticks:{...base.scales.y.ticks,callback:v=>'R$'+Math.round(v).toLocaleString('pt-BR')}}}}}],
+   ['ch-emp',{type:'line',data:{labels:wL,datasets:[{data:eD,borderColor:'#378ADD',backgroundColor:'rgba(55,138,221,0.12)',tension:.3,fill:true,pointRadius:3,spanGaps:true}]},options:{...base,scales:{...base.scales,y:{...base.scales.y,ticks:{...base.scales.y.ticks,callback:v=>v+'%'}}}}}],
+   ['ch-sono',{type:'line',data:{labels:wL,datasets:[{data:sonoD,borderColor:'#534AB7',backgroundColor:'rgba(83,74,183,0.12)',tension:.3,fill:true,pointRadius:3,spanGaps:true}]},options:{...base,scales:{...base.scales,y:{...base.scales.y,min:1,max:10}}}}],
+   ['ch-ans',{type:'line',data:{labels:wL,datasets:[{data:ansD,borderColor:'#EF9F27',backgroundColor:'rgba(239,159,39,0.12)',tension:.3,fill:true,pointRadius:3,spanGaps:true}]},options:{...base,scales:{...base.scales,y:{...base.scales.y,min:1,max:10}}}}],
+   ['ch-livro',{type:'bar',data:{labels:wL,datasets:[{label:'Pessoal',data:lP,backgroundColor:'#534AB7',borderRadius:3},{label:'Profissional',data:lT,backgroundColor:'#185FA5',borderRadius:3}]},options:{...base,scales:{...base.scales,x:{...base.scales.x,stacked:true},y:{...base.scales.y,stacked:true}}}}]
   ].forEach(([id,cfg])=>{if(charts[id])charts[id].destroy();const el=document.getElementById(id);if(el)charts[id]=new Chart(el,cfg);});
-  let totalTrade=0,totalPags=0,maxS=0,curS=0;
-  weeks.forEach(k=>{const w=d[k]||{};totalTrade+=(parseFloat(w.pr||0)+parseFloat(w.rr2||0));totalPags+=(parseFloat(w['bp-sem']||0)+parseFloat(w['bt-sem']||0));const med=(w.checks?.med||[]).filter(Boolean).length;if(med===7){curS++;maxS=Math.max(maxS,curS);}else curS=0;});
-  document.getElementById('st-metrics').innerHTML=`
-    <div class="metric"><div class="metric-lbl">Semanas</div><div class="metric-val">${weeks.length}</div></div>
-    <div class="metric"><div class="metric-lbl">Trade total</div><div class="metric-val" style="font-size:14px;color:${totalTrade>=0?'var(--green)':'var(--red)'}">${(totalTrade<0?'-':'')+'R$'+Math.abs(Math.round(totalTrade)).toLocaleString('pt-BR')}</div></div>
-    <div class="metric"><div class="metric-lbl">Paginas lidas</div><div class="metric-val">${Math.round(totalPags)}</div></div>
-    <div class="metric"><div class="metric-lbl">Melhor sequencia</div><div class="metric-val">${maxS}<span style="font-size:12px">sem</span></div><div class="metric-sub">meditacao 7/7</div></div>`;
-  const allMed=weeks.map(k=>(d[k]?.checks?.med||[]).filter(Boolean).length);
-  let streak2=0;for(let i=allMed.length-1;i>=0;i--){if(allMed[i]===7)streak2++;else break;}
-  document.getElementById('med-card').innerHTML=`<div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-    <div style="text-align:center"><div style="font-size:36px;font-weight:700;color:var(--purple)">${streak2}</div><div style="font-size:12px;color:var(--txt2)">semanas</div><div style="font-size:11px;color:var(--txt3)">em sequencia</div></div>
-    <div style="flex:1;min-width:160px">
-      <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px">${allMed.map((v,i)=>`<div class="hm-cell" title="Sem ${i+1}: ${v}/7" style="background:${v===7?'#534AB7':v>=4?'#AFA9EC':v>0?'#EEEDFE':'var(--bg3)'}"></div>`).join('')}</div>
-      <div style="display:flex;gap:10px;font-size:11px;color:var(--txt2)">
-        <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#534AB7;display:inline-block"></span>7/7</span>
-        <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#AFA9EC;display:inline-block"></span>4-6</span>
-        <span style="display:flex;align-items:center;gap:4px"><span style="width:10px;height:10px;border-radius:2px;background:#EEEDFE;display:inline-block"></span>1-3</span>
-      </div>
-    </div>
-  </div>`;
+  let tT=0,tP2=0,maxS=0,curS=0;
+  weeks.forEach(k=>{const w=d[k]||{};const tr=w.trade||{};TRADE_KEYS.forEach(dk=>{const td=tr[dk]||{};tT+=parseFloat(td.prop?.result||0)+parseFloat(td.real?.result||0);});tP2+=(parseFloat(w['bp-sem']||0)+parseFloat(w['bt-sem']||0));let med=0;SAUDE_KEYS.forEach(sk=>{if((w.saude?.[sk]?.med)==='1')med++;});if(med===7){curS++;maxS=Math.max(maxS,curS);}else curS=0;});
+  document.getElementById('st-metrics').innerHTML='<div class="metric"><div class="metric-lbl">Semanas</div><div class="metric-val">'+weeks.length+'</div></div><div class="metric"><div class="metric-lbl">Trade total</div><div class="metric-val" style="font-size:13px;color:'+(tT>=0?'var(--green)':'var(--red)')+'">'+(tT<0?'-':'')+'R$'+Math.abs(Math.round(tT)).toLocaleString('pt-BR')+'</div></div><div class="metric"><div class="metric-lbl">Paginas lidas</div><div class="metric-val">'+Math.round(tP2)+'</div></div><div class="metric"><div class="metric-lbl">Seq. meditacao</div><div class="metric-val">'+maxS+'<span style="font-size:11px">sem</span></div></div>';
+  const allMed=weeks.map(k=>{let med=0;SAUDE_KEYS.forEach(sk=>{if((d[k]?.saude?.[sk]?.med)==='1')med++;});return med;});
+  let str=0;for(let i=allMed.length-1;i>=0;i--){if(allMed[i]===7)str++;else break;}
+  document.getElementById('med-card').innerHTML='<div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><div style="text-align:center"><div style="font-size:34px;font-weight:700;color:var(--purple)">'+str+'</div><div style="font-size:12px;color:var(--txt2)">semanas seguidas</div></div><div style="flex:1;min-width:160px"><div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px">'+allMed.map((v,i)=>'<div class="hm-cell" title="Sem '+(i+1)+': '+v+'/7" style="background:'+(v===7?'#534AB7':v>=4?'#AFA9EC':v>0?'#EEEDFE':'var(--bg3)')+'"></div>').join('')+'</div><div style="display:flex;gap:10px;font-size:11px;color:var(--txt2)"><span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#534AB7;margin-right:3px"></span>7/7</span><span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#AFA9EC;margin-right:3px"></span>4-6</span><span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#EEEDFE;margin-right:3px"></span>1-3</span></div></div></div>';
 }
-window.addEventListener('offline',()=>toast('Offline — dados salvos localmente'));
+
+window.addEventListener('offline',()=>toast('Offline - dados salvos localmente'));
 window.addEventListener('online',()=>toast('Online'));
 document.getElementById('wlbl').textContent=wlabel(curWeek);
 loadWeek();
 </script>
-<script>
-if('serviceWorker' in navigator){
-  window.addEventListener('load',()=>{
-    navigator.serviceWorker.register('sw.js')
-      .then(r=>console.log('SW ok:',r.scope))
-      .catch(e=>console.log('SW erro:',e));
-  });
-}
-</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}</script>
 </body>
 </html>
