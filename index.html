@@ -374,7 +374,7 @@ function mkAcct(pre,data,label,cls){
     '<div class="frow"><span class="flabel">R/R minimo</span><input type="text" id="'+pre+'-rr" style="width:70px;text-align:right" placeholder="1:3" value="'+(data.rr||'')+'" oninput="sv()"></div>'+
     '<div class="frow"><span class="flabel">Stop diario (R$)</span><input type="number" id="'+pre+'-stop" style="width:100px;text-align:right" placeholder="0" value="'+(data.stop||'')+'" inputmode="numeric" oninput="sv()"></div>'+
     '<div class="frow"><span class="flabel">Profit alvo (R$)</span><input type="number" id="'+pre+'-profit" style="width:100px;text-align:right" placeholder="0" value="'+(data.profit||'')+'" inputmode="numeric" oninput="sv()"></div>'+
-    '<div class="frow"><span class="flabel">Resultado (R$)</span><input type="number" id="'+pre+'-result" style="width:100px;text-align:right" placeholder="0" value="'+(data.result||'')+'" inputmode="numeric" oninput="sv();updateTradeTotal()"></div>'+
+    '<div class="frow"><span class="flabel">Resultado (R$)</span><input type="number" id="'+pre+'-result" style="width:100px;text-align:right" placeholder="0" value="'+(data.result||'')+'" inputmode="text" oninput="sv();updateTradeTotal()"></div>'+
     '<div class="frow"><span class="flabel">Ops / Win / Loss</span><div style="display:flex;gap:5px">'+
     '<input type="number" id="'+pre+'-ops" style="width:46px;text-align:center" placeholder="ops" value="'+(data.ops||'')+'" inputmode="numeric" oninput="sv()">'+
     '<input type="number" id="'+pre+'-wins" style="width:46px;text-align:center" placeholder="win" value="'+(data.wins||'')+'" inputmode="numeric" oninput="sv()">'+
